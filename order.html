@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Review an Ins Cafe order request.">
+    <meta name="theme-color" content="#173d31">
+    <title>Order request — Ins Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announcement">
+        <p>A good day starts with a good cup <span aria-hidden="true">·</span> Come on in</p>
+    </div>
+
+    <header class="site-header">
+        <nav class="navigation wrap" aria-label="Main navigation">
+            <a class="brand" href="index.html#top" aria-label="Ins Cafe home">
+                <span class="brand-name">ins<span>cafe</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="menu.html">The menu</a>
+                <a href="index.html#story">Our story</a>
+                <a href="index.html#visit">Find us</a>
+                <a class="nav-cta" href="menu.html">Back to menu <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="order-page section-pad">
+        <div class="wrap order-wrap">
+            <section class="order-card" aria-labelledby="order-title">
+                <p class="eyebrow eyebrow-green">Ins Cafe</p>
+                <h1 id="order-title">Order <em>request.</em></h1>
+                <p class="order-intro">Review the items in this request and show it to the Ins Cafe team.</p>
+                <p class="order-error" data-order-error role="alert" hidden></p>
+                <div data-order-content hidden>
+                    <ul class="order-items" data-order-items aria-label="Requested items"></ul>
+                    <div class="order-total">
+                        <span>Total</span>
+                        <strong data-order-total></strong>
+                    </div>
+                </div>
+                <p class="order-note">This is a request preview only. It has not been sent to the cafe or paid for. Please confirm availability and the final total with the team.</p>
+                <a class="button button-light" href="menu.html">Back to menu <span aria-hidden="true">←</span></a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-main">
+            <a class="brand footer-brand" href="index.html#top" aria-label="Ins Cafe home">
+                <span class="brand-name">ins<span>cafe</span></span>
+            </a>
+            <p>Good coffee. Good company. A little pause in your everyday.</p>
+            <a class="footer-top" href="#main">Back to top ↑</a>
+        </div>
+        <div class="wrap footer-bottom">
+            <span>© Ins Cafe</span>
+            <span>Evenings are better with coffee and good company.</span>
+        </div>
+    </footer>
+    <script src="order.js" defer></script>
+</body>
+</html>

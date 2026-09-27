@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the Ins Cafe menu, from white mocha coffee and Matcha Oreo to our homemade-patty cheeseburger.">
+    <meta name="theme-color" content="#173d31">
+    <title>Menu — Ins Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announcement">
+        <p>A good day starts with a good cup <span aria-hidden="true">·</span> Come on in</p>
+    </div>
+
+    <header class="site-header menu-site-header">
+        <nav class="navigation wrap" aria-label="Main navigation">
+            <a class="brand" href="index.html#top" aria-label="Ins Cafe home">
+                <span class="brand-name">ins<span>cafe</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="menu.html" aria-current="page">The menu</a>
+                <a href="index.html#story">Our story</a>
+                <a href="index.html#visit">Find us</a>
+                <button class="cart-toggle" type="button" data-open-cart aria-label="Open cart, 0 items">
+                    Cart <span class="cart-count" data-cart-count aria-hidden="true">0</span>
+                </button>
+                <a class="nav-cta" href="index.html#visit">Come visit <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="menu-section section-pad menu-page" id="menu" aria-labelledby="menu-title">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-green">Made for your kind of craving</p>
+                        <h1 id="menu-title">A little something<br><em>for everyone.</em></h1>
+                    </div>
+                    <p class="section-intro">A few Ins Cafe favorites to make your evening a little better. We’re just getting started.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card" data-product-id="white-mocha" data-price-m="89" data-price-l="99">
+                        <div class="menu-image">
+                            <img src="images/white-mocha-coffee.png" alt="White mocha coffee in an Ins Cafe cup" fetchpriority="high">
+                            <span class="menu-number">01</span>
+                        </div>
+                        <div class="menu-card-copy">
+                            <div class="menu-title-row">
+                                <h2>White Mocha Coffee</h2>
+                                <span class="menu-tag">A classic</span>
+                            </div>
+                            <p class="menu-prices">M ₱89 <span aria-hidden="true">·</span> L ₱99</p>
+                            <p>Creamy white chocolate meets bold espresso, finished with a soft, fluffy topping.</p>
+                            <label class="product-size" for="white-mocha-size">
+                                Size
+                                <select id="white-mocha-size" data-size-select>
+                                    <option value="M">Medium (M) — ₱89</option>
+                                    <option value="L">Large (L) — ₱99</option>
+                                </select>
+                            </label>
+                            <button class="button button-light add-to-cart" type="button" data-add-to-cart data-product-id="white-mocha">Add to cart <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-product-id="matcha-oreo" data-price-m="89" data-price-l="99">
+                        <div class="menu-image">
+                            <img src="images/matcha-oreo.jpg" alt="Matcha Oreo drink" loading="lazy">
+                            <span class="menu-number">02</span>
+                        </div>
+                        <div class="menu-card-copy">
+                            <div class="menu-title-row">
+                                <h2>Matcha Oreo</h2>
+                                <span class="menu-tag">Matcha &amp; cookie</span>
+                            </div>
+                            <p class="menu-prices">M ₱89 <span aria-hidden="true">·</span> L ₱99</p>
+                            <p>Smooth matcha and creamy milk with a delicious Oreo cookie finish.</p>
+                            <label class="product-size" for="matcha-oreo-size">
+                                Size
+                                <select id="matcha-oreo-size" data-size-select>
+                                    <option value="M">Medium (M) — ₱89</option>
+                                    <option value="L">Large (L) — ₱99</option>
+                                </select>
+                            </label>
+                            <button class="button button-light add-to-cart" type="button" data-add-to-cart data-product-id="matcha-oreo">Add to cart <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-product-id="cheese-burger" data-price="50">
+                        <div class="menu-image">
+                            <img src="images/cheese-burger.jpg" alt="Cheeseburger made with a homemade patty" loading="lazy">
+                            <span class="menu-number">03</span>
+                        </div>
+                        <div class="menu-card-copy">
+                            <div class="menu-title-row">
+                                <h2>Cheese Burger</h2>
+                                <span class="menu-tag">Homemade patty</span>
+                            </div>
+                            <p class="menu-prices">₱50</p>
+                            <p>A comforting cheeseburger made with our homemade patty.</p>
+                            <p class="product-size-note">One size</p>
+                            <button class="button button-light add-to-cart" type="button" data-add-to-cart data-product-id="cheese-burger">Add to cart <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+                </div>
+                <p class="menu-footnote">More good things are on the way.</p>
+                <div class="menu-more">
+                    <a class="button button-light" href="index.html#top">Back to home <span aria-hidden="true">←</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <p class="cart-status" data-cart-status role="status" aria-live="polite"></p>
+    <dialog class="cart-dialog" data-cart-dialog aria-labelledby="cart-title">
+        <div class="cart-dialog__header">
+            <div>
+                <p class="eyebrow eyebrow-green">Your Ins Cafe picks</p>
+                <h2 id="cart-title">Your cart</h2>
+            </div>
+            <button class="cart-close" type="button" data-close-cart aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-dialog__body">
+            <div class="cart-toolbar">
+                <p class="cart-summary" data-cart-summary>0 items</p>
+                <button class="cart-clear" type="button" data-clear-cart disabled>Clear cart</button>
+            </div>
+            <p class="cart-empty" data-cart-empty>Your cart is empty. Add a favorite from the menu.</p>
+            <ul class="cart-items" data-cart-items aria-label="Cart items"></ul>
+        </div>
+        <div class="cart-dialog__footer">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <strong data-cart-total>₱0</strong>
+            </div>
+            <button class="button button-light cart-qr-button" type="button" data-generate-qr disabled>Generate order QR <span aria-hidden="true">▦</span></button>
+            <div class="cart-qr-output" data-qr-output hidden>
+                <canvas data-qr-canvas aria-label="QR code for this cart request"></canvas>
+                <p data-qr-message role="status" aria-live="polite"></p>
+                <button class="cart-qr-hide" type="button" data-hide-qr>Hide QR and review cart</button>
+            </div>
+            <p>The QR opens the order details on this website. The scanning device must be able to reach the website; local file previews and localhost links only work on this computer.</p>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="wrap footer-main">
+            <a class="brand footer-brand" href="index.html#top" aria-label="Ins Cafe, back to top">
+                <span class="brand-name">ins<span>cafe</span></span>
+            </a>
+            <p>Good coffee. Good company. A little pause in your everyday.</p>
+            <a class="footer-top" href="#main">Back to top ↑</a>
+        </div>
+        <div class="wrap footer-bottom">
+            <span>© Ins Cafe</span>
+            <span>Evenings are better with coffee and good company.</span>
+        </div>
+    </footer>
+    <script src="scripts/qrcode-generator.js" defer></script>
+    <script src="cart.js" defer></script>
+</body>
+</html>
